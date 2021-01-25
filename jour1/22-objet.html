@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 22-objet.html
+
+        // nous venons de voir les tableaux => très pratique car stocker plusieurs valeurs dans une seule variable 
+
+        let villes = ["Paris", "Marseille", "Lille"];
+
+        // vous pouvez écrire les tableaux aussi vous la forme suivante 
+
+        let pays = [
+            "France" , // 0
+            "Belgique" , // 1
+            "Allemagne" // 2
+        ]; // il est possible d'écrice un tableau en sautant des lignes après la virgule
+        // cette écriture est pratique si on a un tableau qui contient plus de 5 valeurs 
+
+        // il existe un autre type de variable qui permet de stocker plusieurs valeurs 
+        // objet 
+
+        // attention il faut utiliser des { } accolades 
+    let voitures = { 
+        marque : "Peugeot" , // pour les objets l'index (position) mot // pas un chiffre
+        modele : 206 ,
+        anneeAchat : 2016 ,
+        prix : 100000 ,
+        devise : "euro" ,
+        proprietaire : "moi" // trailing coma
+    };
+
+    console.log(voitures.marque); // variableObjet.propriete
+    console.log(voitures["marque"]); // varableObjet["propriete"]
+
+    // boucle for in 
+
+    // concaténation avec un objet 
+    // je veux écrire la phrase suivante 
+    // je suis le propriétaire du véhicule Peugeot 206 acheté en 2016
+
+    let phrase = `je suis le propriétaire du véhicule ${voitures.marque} ${voitures.modele} acheté en ${voitures.anneeAchat}`;
+    console.log(phrase);
+
+    </script>
+</body>
+</html>
+<!-- 
+    fin de la journée 
+
+    découvert 
+
+    mot clés alert() console.log()
+    5 types de variables 
+    number
+    string
+    undefined
+    tableau
+    objet 
+
+    => concaténation => plusieurs techniques 
+    // boolean // condition // if()
+    // boucle // function 
+    // rdv demain 9h00 !!!!!!!!!!!!!!!!!!!!!!!!
+-->

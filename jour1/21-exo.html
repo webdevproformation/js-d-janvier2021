@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vehicules = ["Renault" , "VW", "Peugeot"];
+
+        let phrase = `J'ai acheté une ${vehicules[2]} 2006 cette année. J'avais précédemment une ${vehicules[0]} Clio`;
+
+        console.log(phrase);
+
+        // Question de Quentin : quelle différence entre let et var pour déclarer une variable ?
+
+        // jusqu'à 2015 avant lorsque l'on créait des variables en javascript 
+        // on utilisait le mot clé var 
+
+        var saison = ["Printemps","Automne","Hiver", "Eté"];
+
+        // le problème de cette manière 
+        // ailleurs dans la code 
+
+        var saison = 2 ;
+
+        // aucune sécurité si jamais tu crées ta variable 
+
+        // à partir de 2015
+
+        let vetements = ["chaussure", "cravate","pantalon"];
+
+        // .... 
+
+        // let vetements = 2 ;
+
+        // Uncaught SyntaxError: redeclaration of let vetements
+
+        // retrocomptatibilité
+        // même les anciens codes fonctionnent
+        // inventé un nouveau mot let 
+
+
+        // 22-objet.html
+
+
+
+    </script>
+</body>
+</html>

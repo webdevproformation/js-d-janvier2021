@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 17-template-string.html
+
+        // template string 
+
+        let a = "presentation";
+        let b = "un peu de texte";
+
+        // je vais stocker dans la variable html le code html suivant
+        // <p id="presentation">un peu de texte </p>;
+
+        // back quote => Windows AltGr + 7
+        // 
+        let html = `<p id="${a}">${b}</p>`;
+        console.log(html);
+    </script>
+</body>
+</html>
+<!-- 
+    créer le fichier 18-exo.html
+    dans ce fichier créer une balise script 
+    dans cette balise script vous avez 2 variables
+    a = "hello"
+    b = "index"
+    écrire dans la console le texte suivant :
+    <h1 class="hello">index</h1>
+    // utilisez les templates string pour réaliser la concaténation 
+-->

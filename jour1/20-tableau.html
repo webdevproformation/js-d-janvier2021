@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 20-tableau.html
+
+        let a = 1 ; // number 
+        let b = "Victor" ; // string 
+        let c ; // créer une variable sans affecter une valeur 
+        // undefined 
+        console.log( c );
+        // en javascript, il est possible de créer une variable sans lui donner de valeur 
+        // on peut par la suite lui attribuer une valeur 
+
+        c = "bonjour"; // attention la variable a été créée à la ligne 14
+         // à la ligne 20 on donne une valeur à la variable c 
+         // il NE FAUT PAS précédé la variable c du mot clé let 
+         // sinon SyntaxError: redeclaration of let c
+
+         // les tableaux 
+
+         // lorsque l'on crée un script en informatique on souvent besoin de nombreuses valeurs 
+
+         // afficher une liste des jours de la semaine
+         let jour1 = "Lundi";
+         let jour2 = "Mardi";
+         let jour3 = "Mercredi";
+         // .... 
+         // ennuyant => je vais devoir créer autant de variable que j'ai de valeurs dans les jours de la semaine 
+         // => stocker tous les mots du dictionnaire 
+         // ça alourdit enormément mon code 
+
+         // une technique en informatique => ressembler toutes les valeurs dans une seule variable => tableau 
+
+         // 1 seule variable qui stocke plusieurs valeurs  => tableau 
+
+         let semaine = [ "Lundi" , "Mardi", "Mercredi", "Jeudi" ];
+         // la variable semaine contient 4 chaines de caractères
+        // seul l'espace entre let semaine est OBLIGATOIRE
+        // les autres espaces sont facultatifs 
+         // [] => crochet 
+
+         // tableau => très pratique évite d'avoir à créer plein de variables 
+
+         // si je veux récupérer les valeurs stockées dans la variable semaine, j'utilise la syntaxe suivante :
+
+         console.log(semaine[0]) ;
+
+         // semaine[0] => le chiffre 0 correspond à la position de la valeur dans le tableau 
+        // je veux afficher le 2ème élément dans le tableau 
+        console.log( semaine[1]);
+        // afficher le dernier élément du tableau 
+        console.log( semaine[3]);
+
+        // utiliser une tableau pour faire de la concaténation 
+
+        let course = ["pomme", "poire","banane"];
+
+        // je veux écrire la phrase suivante dans la console
+        // j'ai acheté une pomme et une banane 
+        // en utilisant la variable tableau course
+
+        let phrase = `j'ai acheté une ${course[0]} et une ${course[2]}`;
+        console.log( phrase );
+
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer le fichier 21-exo.html
+
+    ce fichier contient une balise script 
+
+    créer une tableau vehicules qui contient les 3 valeurs suivantes :
+
+    Renault
+    VW
+    Peugeot 
+
+    écrire la phrase suivante dans la console en utilisant la variable vehicules
+
+    J'ai acheté une Peugeot 206 cette année. J'avais précédemment une Renault Clio 
+
+-->
