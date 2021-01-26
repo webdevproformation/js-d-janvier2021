@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            2 >= 2
+            "a" == "ab"
+            2 != 3 && 10 < 33
+            2 ==  "2"
+            2 === "2"
+            (2 != 5 && 3 > 4 ) || 2 <= 14 
+            2 != 5 && ( 3 > 4  || 2 <= 14 ) 
+            2 != 5 && 3 > 4  || 2 <= 14  
+
+        */
+
+        let verif1 = 2 >= 2 ; // true
+        console.log( verif1 );
+
+        let verif2 = "a" == "ab" ; // false
+        console.log( verif2 ); 
+
+        let verif3 = 2 != 3 && 10 < 33 ;
+        //         =  true  &&   true ;
+        //         =   true 
+
+        console.log( verif3 );
+
+        let verif4 = 2 ==  "2" ;
+        //         = "2" == "2"   // transtypage automatique
+        //         =   true 
+
+        console.log( verif4 );
+
+        let verif5 = 2 === "2" ;
+        //         = false
+
+        console.log( verif5) ;
+
+        let verif6 = (2 != 5 && 3 > 4 ) || 2 <= 14 ;
+        //         = ( true &&  false ) || 2 <= 14 ;
+        //         = ( false ) || 2 <= 14 ;
+        //         =  false  || true ;
+        //         = true ;
+
+        console.log( verif6 );
+
+        let verif7 = 2 != 5 && ( 3 > 4  || 2 <= 14 ) ;
+        //         =  true  &&  ( false ||  true  )
+        //         =  true  &&  ( true  )
+        //         =  true  &&   true  
+        //         =  true  
+
+        console.log( verif7 );
+
+        let verif8 = 2 != 5 && 3 > 4  || 2 <= 14  
+        //  si il n'y a pas de parenthèses => && qui sont prioritaires sur les || 
+
+        //        = true && false || true
+        //        =   false || true 
+        //        =   true 
+
+        console.log( verif8 );
+
+
+
+    </script>
+</body>
+</html>
