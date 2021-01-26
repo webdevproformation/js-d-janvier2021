@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let compteur = 30 ;
+        let titre = "titre de l'article" ;
+        let contenu = "lorem ipsum ....";
+
+        // plusieurs solutions 
+        // solution 1 : template string et += 
+        let article = `<div>
+                        <h1 class="title">${titre}</h1>
+                        <p>${contenu}</p>`;
+            if(compteur == 0){
+                article += `<p> aucun like</p>`;
+            }else {
+                article += `<p> cet article a ${compteur} likes</p>`;
+            }
+        article += `</div>`;
+        console.log(article);
+
+        // += ++ ""
+    </script>
+</body>
+</html>
