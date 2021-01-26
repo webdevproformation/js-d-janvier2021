@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 11-boucle.html
+
+        // en informatique 
+        // souvent on va avoir besoin de répéter des instructions 
+        // que se ressemblent, plusieurs fois :
+
+        let tableau = ["pomme","poire","ananas","cerise" ];
+
+        // je veux afficher chacun des éléments dans mon tableau
+
+        console.log(tableau[0]); // 1er
+        console.log(tableau[1]); // 2ème
+        console.log(tableau[2]); // 3ème
+        console.log(tableau[3]); // 4ème
+
+        // les 4 instructions précédentes se ressemblent beaucoup
+        // la seule valeur qui change dans les lignes précédentes index 
+        
+        // => dommage de répéter quasiment la même instruction plusieurs fois 
+
+        // la variable tableau contient 4 valeurs => tableau avec 1000 valeurs 
+
+        // afin d'éviter de se réécrire les mêmes instructions 
+        // => utiliser les boucles // loop 
+
+        // for(){}
+
+        // while(){}
+
+        // forEach() // map()
+        // do {} while()
+
+        // boucle for(){}
+        // attention dans les parenthèses de for, il y a 3 instructions
+        // let i = 0 ; créer une variable =  itérateur = compteur 
+        let i = 30;
+        // i < 10 ; boolean => condition de sortie de la boucle 
+        // tant que la condition est true, on exécute les instructions dans les accolades
+        // dès que cette condition est false => sort de la boucle
+
+        //i = i + 1 : incrémente : l'augmentation de la variable i suite à un tour de boucle 
+        for( let i = 0 ; i < 10 ; i = i + 1 ){
+             // let i = 0 ; exécutée 1 seule 
+             // i < 10 ;
+             // 0 < 10; // true
+             // console.log(0)
+             // i = i + 1
+             // i = 0 + 1;
+             // i = 1;
+             // 1 < 10 ; true 
+             // console.log(1);
+             // i = 1 + 1
+             // i = 2 
+             // 2 < 10 true
+             //  console.log(2);
+             // i = i + 1
+             // i = 2 + 1
+             // i = 3;
+             // 3 < 10 true 
+             // ... 
+             // i = 9 + 1
+             // i = 10
+             // 10 < 10 false 
+            console.log(i);
+        }
+    </script>
+</body>
+</html>
+<!-- 
+    créer le fichier 12-exo.html
+
+    ce fichier contient une balise script 
+
+    utiliser la boucle for pour afficher dans la console les valeurs suivantes
+
+    1
+    3
+    5
+    7
+    9
+    11
+    13
+    15 
+    17
+    19
+    21
+
+    // attention vous augmenter de + 2
+
+-->
