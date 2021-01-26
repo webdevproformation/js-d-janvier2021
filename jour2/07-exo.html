@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        // a = 30
+        // b = 40
+        // c = 12 * 4 < 44/3
+        // 1/ vérifier est ce que a supérieur ou égal à b
+        // si c'est vrai écrire dans la console verif 1 ok
+
+        // 2/ vérifier est ce que c supérieur ou égal à b
+        // si c'est vrai écrire dans la console verif 2 ok
+
+        // 3/vérifier est ce que c supérieur ou égal à b OU a inférieur à b
+        // si c'est vrai écrire dans la console verif 3 ok 
+        
+        */
+       let a = 30 ;
+       let b = 40 ;
+       let c = 12 * 4 < 44/3 ; 
+       //    =  48  < 14.666666666
+       //    = false 
+
+       if( a >= b ){
+        // 30 >= 40
+        // false 
+        console.log("verif1 ok");
+       }
+
+       if( c >= b){
+        // false >= 40
+        // automatique false => 0 transtypage 
+        // 0 >= 40
+        // false
+        console.log("verif2 ok");
+       }
+
+       if( c >= b || a < b ){
+        // false >= 40 || 30 < 40
+        // 0 >=40   || true
+        // false || true 
+        // true
+        console.log("verif3 ok");
+       }
+
+       if(true > 10){
+        // 1 > 10
+        // false
+        console.log("verif4 ok");
+       }
+
+       if(true > -10){
+        // 1 > -10
+        // true
+        console.log("verif5 ok");
+       }
+
+       // code que tu veux exécuter si une ou plusieurs conditions respectées
+
+       // login + mot de passe 
+       // SMS autre mot de passe 
+
+       // if en css 
+       // @media (min-width:500px){  body{ background: red }}
+
+       if(false > "bonjour"){
+          // 0 > "bonjour" 
+          // "0" > "bonjour"
+          // false 
+       }
+
+       if( true < false ){
+            // 1 < 0
+            // false
+            console.log("toto")
+       }
+
+       // à partir du moment où tu compares un boolean avec un autre type : string / number / undefined / boolean
+
+       // le boolean va se transformer 
+
+       // true > true (boolean boolean)
+       // 1 > 1 // false
+
+       // true > "a" (boolean string)
+       // 1 > "a"
+       // "1" > "a" // false
+
+       // true > 10
+       // 1 > 10 // false 
+
+       // true > undefined
+       // 1 > 0
+       // true 
+
+       // 0 undefined null "" false NaN => se transforment en 0
+       // https://www.youtube.com/watch?v=XYFg6_V-c9Q
+
+    </script>
+</body>
+</html>
