@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let titre = "Premier article" ;
+        let contenu = "lorem ipsum";
+        let date = "01/01/2019"; 
+
+        // plusieurs solutions possibles pour écrire ce texte 
+
+        // solution 1 : via les templates string ``
+        // acceptent les sauts de lignes
+let html1 =
+`<article>
+    <header class="article_entete">
+        <h1>${titre}</h1>
+    <time>${date}</time>
+    </header>
+    <div class="article_contenu">
+        <p>${contenu}</p>
+    </div>
+</article>`;
+        console.log(html1);
+
+        // solution 2 : +=  et "" et \n saut de ligne quand il est mis dans ""
+        let html2 = "<article>\n";
+            html2 += "  <header class=\"article_entete\">\n";
+            html2 += "    <h1>"+ titre +"</h1>\n";
+            html2 += "    <time>"+ date +"</time>\n";
+            html2 += "  </header>\n";
+            html2 += "  <div class=\"article_contenu\">\n";
+            html2 += "    <p>"+ contenu +"</p>\n" ;
+            html2 += "  </div>\n";
+            html2 += "</article>";
+        console.log(html2);
+
+    // token = caractère 
+    // unexpected = non attendu 
+    // ligne 
+    </script>
+</body>
+</html>
