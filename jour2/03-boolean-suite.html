@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 03-boolean-suite.html
+
+        // true ou false 
+        let a = 40 > 2 ; // est ce que 40 est strictement supérieur à 2 => OUI
+        //       true
+        console.log( a );
+
+        let b = 40 <= 2 ; // inférieur ou égal => NON 
+        console.log( b );
+
+        // attention true et false sont des mots clé du langage javascript 
+        // comme let ou console.log()
+
+        // pour les chaines de caractères => calcul => concaténation
+        // pour les number => addition / soustraction / multiplication / division / puissance
+
+        // il est possible d'effecter des calculs avec des booleans 
+        // 3 opérateurs : 
+        // && => ET => + - * / ** 
+        // || => OU
+        // ! => NOT 
+        // > < >= <= != == === : comparateurs 
+
+        let c = 10 > 2 && 20 < 3 ;
+        //    =  true  &&  false ; // && pour obtenir true il faut qu'il ait true des deux côtés 
+                                    // du symbole && pour avoir true 
+        //    =       false
+
+        // compte bancaire saisir vos login et mots de passe 
+
+        let loginBdd = "azerty";
+        let mdpBdd = "12345";
+
+        let verif = loginBdd == "azerty" && mdpBdd == "12345a" ;
+        //                true          &&       false ;
+        //                    false => vous n'avez pas saisit vos identifiants correctement 
+
+
+        let d = 30 > 2 || 30 < 40;
+        //    =    true || true ;
+        //    =        true 
+
+        console.log( d );
+
+        let e = 20 > 30 || 30 < 40 ;
+        //    =   false ||  true ;
+        //    =         true ; 
+        // https://webdevpro.net/raccourcis-clavier-pour-coder-sur-macos/
+
+        let f = "bonjour" == "hello" || "salut" == "coucou";
+        //           false           ||    false 
+        //    =                 false 
+        console.log( f ); 
+
+        let g = !( "bonjour" == "hello" );
+        //    = ! (  false   )
+        //    = !   false   // inverse
+        //    =  true ; 
+        console.log(g);
+        let h = ! ( 20 >= 20  );
+        //    =  ! (true);
+        //    =  !true // inverse
+        //    = false 
+        console.log( h ) ;
+
+    </script>
+</body>
+</html>
+
+<!-- 
+    cas pratique créer le fichier 04-exo.html 
+    ce fichier contient les comparaisons suivantes :
+
+    2 >= 2
+     "a" == "ab"
+     2 != 3 && 10 < 33
+     2 ==  "2"
+     2 === "2"
+     (2 != 5 && 3 > 4 ) || 2 <= 14 
+     2 != 5 && ( 3 > 4  || 2 <= 14 ) 
+     2 != 5 && 3 > 4  || 2 <= 14  
+
+    déterminer pour chaque compaison si le résultat final est true ou false ??? 
+-->
