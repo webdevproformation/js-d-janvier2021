@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // boucle infinie 
+        // !(jamais la condition ne sera jamais false)
+        // la condition est toujours true
+        /* for( let i = 1 ; i < 35 ; i + 3 ){
+            
+        } */
+
+        //let inspecteur = [];
+        // solution 1
+        for( let i = 1 ; i < 35 ; i = i + 3 ){
+            //inspecteur.push(i);
+            if(i <= 10){
+                console.log(i);
+            } else {
+                console.log( i * 10 );
+            }
+        }// pas de problème pour avoir des accolades dans accolades 
+
+        let citation = " \"\" "; // OUI !!! uniquement pour les chaines de caractères " " ET qui contiennent le symbole \"
+
+        // rdv 10h50 bon café !! fonction 
+
+        // solution 2
+        let i = 1 ; // créer la variable et stocke une valeur
+        while( i < 35 ){
+            if(i <= 10){
+                console.log(i);
+            } else {
+                console.log( i * 10 );
+            }
+            i = i + 3 ;
+        }
+
+        // solution 3
+        i = -2 ; // modifie la valeur stockée dans la variable
+        while( i < 34 ){
+            i = i + 3 ;
+            if(i <= 10){
+                console.log(i);
+            } else {
+                console.log( i * 10 );
+            }
+        }
+
+        //console.log(inspecteur);
+    </script>
+</body>
+</html>
