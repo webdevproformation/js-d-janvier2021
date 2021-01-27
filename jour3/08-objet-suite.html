@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 08-objet-suite.html
+
+        //objet de permet de stocker plusieurs valeurs
+
+        let arbre = { 
+            nom : "Sapin" , // index nommé // clé // propriété de l'objet arbre
+            age : 10,
+            unite : "ans",
+            isCoupe : false ,
+            description : function(){  // stocke une fonction dans un objet 
+                                       // la propriété description : METHODE de l'objet arbre
+                console.log("je suis un sapin");
+            },
+            details(){ // 2ème syntaxe possible pour créer des méthodes dans un objet 
+                console.log("je suis un sapin qui a 10 ans");
+            },
+            information( couleur ){ // méthode avec un paramètre 
+                if(couleur == "vert"){
+                    console.log("c'est le printemps");
+                } else {
+                    console.log("c'est l'automne");
+                }
+            }
+        }
+        // membres d'un objet sont séparés par des , 
+        // membres d'un objet : ses propriétés et ses méthodes 
+
+        // si je veux afficher le nom de l'objet arbre dans la console 
+
+        console.log( arbre.nom );
+
+        // est ce que l'arbre est coupé ?? si oui j'affiche dans la console "je suis un arbre coupé"
+
+        if( arbre.isCoupe == true ){
+            console.log("je suis un arbre coupé");
+        }
+
+        // concaténation avec le objet 
+        // je suis un sapin qui a 10 ans 
+        console.log(`je suis un ${arbre.nom} qui a ${arbre.age} ${arbre.unite}`);
+
+        // appeler des fonctions qui sont stockées dans l'objet 
+
+        // exécuter la fonction description (qui est stockée dans un objet)
+
+        arbre.description();
+
+        arbre.information( "jaune" );  // méthode avec paramètre 
+
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer un nouveau fichier 09-exo.html
+
+    créer un objet cercle 
+
+    cet objet dispose de deux méthodes 
+
+    surface qui a un paramètre rayon
+        dans cette méthode 
+            créer une variable resultat = 3.14 x rayon puissance 2
+            afficher dans la console la phrase suivante "un cercle de rayon "rayon" est une surface de resultat"
+
+    perimetre qui a un paramètre rayon
+          dans cette méthode 
+            créer une variable resultat = 2 x 3.14 x rayon 
+            afficher dans la console la phrase suivante "un cercle de rayon "rayon" a un périmètre de resultat"
+
+    utiliser la méthode perimetre avec la valeur 2
+    utiliser la méthode surface avec la valeur 15
+    utiliser la méthode surface avec la valeur 3,16
+-->
