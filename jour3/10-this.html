@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 10-this.html
+
+        let info = {
+            nom : "jQuery",
+            duree : 3
+        }
+        let unite = "blabla";
+        let projet = {
+            nom : "Découverte de Javascript",
+            duree : 5 ,
+            unite : "jour",
+            presentation(){
+                // pouvoir utiliser les propriétés qui sont stockées DANS l'objet projet
+                // DANS la méthode presentation qui est elle même stockée dans l'objet projet 
+                // this
+                // afficher dans la console le texte suivant 
+                // je suis une formation "Découverte de Javascript" d'une durée de 5 jours
+                console.log(`je suis une formation "${this.nom}" d'une durée de ${this.duree} ${this.unite}s`)
+            },
+            description(){
+                console.log( `${info.nom} ${info.duree}` ); // closure 
+            }
+        }
+        projet.presentation();
+        projet.description();
+    </script>
+</body>
+</html>
