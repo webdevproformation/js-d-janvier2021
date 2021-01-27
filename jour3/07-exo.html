@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // créer la fonction
+        function genererArticle(titre , like){
+            if(like > 0){
+                console.log(`<h1>${titre}</h1>
+                <span>${like}</span>`);
+            } else {
+                console.log(`<h1>${titre}</h1>`);
+            }
+        }
+
+        // appeler la fonction
+        genererArticle("Premier article", 30 );
+        genererArticle("Deuxième article" , 0);
+        genererArticle("Troisième article", 2);
+    </script>
+</body>
+</html>
