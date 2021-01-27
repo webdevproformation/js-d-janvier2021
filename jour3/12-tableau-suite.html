@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 12-tableau-suite.html
+
+        let a = [ "a", "b", "c" ];
+
+        // si je veux récupérer la premier élement du tableau 
+
+        console.log(a[0]);
+
+        // dans un tableau il est possible de stocker autre chose que des chaines de caractères 
+
+        let b = ["a" , 1 , true , [] , function(){ console.log("ici") } , {}];
+
+        // je peux exécuter la fonction qui est stockée dans le tableau b
+        // avec la syntaxe suivante 
+        b[4]();
+        // variable[index]()
+
+        // tableau qui contient des objets 
+
+        //let articles = [ { } , { } ];
+        let articles = [ 
+                    { 
+                        titre : "article 1",
+                        id : 1,
+                        auteur : "moi",
+                        description(){
+                            console.log(`je suis l'${this.titre}`);
+                        }
+                    } , 
+                    { 
+                        titre : "Article 2",
+                        id : 2,
+                        auteur : "Alain",
+                        description(){
+                            return `je suis l'${this.titre}`;
+                        }
+                    } 
+                ];
+        console.log(articles[0].auteur);
+        console.log(articles[1].description());
+        // tableau qui contient des objets => collection 
+        // JSON = Javascript Object Notation 
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer un nouveau fichier 13-exo.html
+
+    ce fichier contient une collection (tableau qui contient de objets)
+    la collection s'appelle users 
+
+    le 1er objet stocké dans le tableau users contient les propriétés suivantes 
+        age : 24
+        nom : Alain
+        role : administrateur
+        status : actif 
+        isAdmin  méthode retourner true si la valeur role == administrateur ET qu'il est actif sinon retourne false
+
+    le 2ème objet stocké dans le tableau users contient les propriétés suivantes 
+        age :25
+        nom : Benjamin
+        role : rédacteur
+        status : inactif 
+        isAdmin  méthode retourner true si la valeur role == administrateur ET qu'il est actif  sinon retourne false
+
+    // afficher dans la console le texte suivant 
+    si le 1er utilisateur est un administrateur alors afficher dans la console la phrase suivante :
+        je m'appelle Alain et j'ai 24 ans
+    si le 1er utilisateur est un administrateur alors afficher dans la console la phrase suivante :
+        je m'appelle Benjamin et j'ai un rôle de rédacteur
+-->
