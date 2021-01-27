@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cercle = {
+            perimetre : function(rayon){ 
+                let resultat = 2 * 3.14 * rayon ;
+                console.log(`un cercle de rayon ${rayon} a un périmètre de ${resultat}`);
+            },
+            surface(rayon){
+                let resultat = 3.14 * rayon ** 2 ;
+                console.log(`un cercle de rayon ${rayon} a un surface de ${resultat}`);
+            }
+        };
+
+        cercle.perimetre(2);
+        cercle.surface(15);
+        cercle.surface(3.16);
+    </script>
+</body>
+</html>
