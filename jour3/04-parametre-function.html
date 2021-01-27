@@ -12,10 +12,53 @@
         // créer une fonction qui s'appelle a
         function a(){
             // instruction 
+            // console.log("je suis la fonction a");
         }
         // exécuter les instructions dans la variable a 
         a();
 
+        // créer une deuxième fonction qui s'appelle b
+        // dans les parenthèses 2 paramètres 
+        // au moment où on crée la fonction , en même temps on crée deux variables 
+        // largeur et hauteur
+        function b( largeur , hauteur ){
+            // instruction 
+            if( largeur === hauteur){
+                // 2  ===  2 // true 
+                console.log("c'est un carré");
+            }else {
+                console.log("c'est un rectangle");
+            }
+        }
+
+        // au moment de l'appel de la fonction b 
+
+        let largeur = 10;
+        let hauteur = 15 ;
+        b(  largeur , hauteur );
+        // au moment de l'appel de la fonction b 
+        b( 2 , 2 );
+        // paramètres permettent de définir la valeur des paramètres au moment de l'appel de la fonction b 
+
     </script>
 </body>
 </html>
+<!-- 
+    créer le fichier 05-exo.html 
+
+    créer une fonction 
+        nom : surfaceCercle 
+        paramètre : rayon 
+        contient des instructions 
+            si le rayon passé en paramètre est inférieur strictement à 0 
+                afficher dans la console le texte suivant : "rayon n'est pas pas conforme"
+            sinon
+                afficher dans la console le texte suivant :
+                    créer une variable surface = 3,14 x rayon puissance 2
+                    un cercle de rayon "la valeur du rayon en paramètre" est de "calcul de la surface"
+
+    utiliser la fonction surfaceCercle avec les valeurs suivantes :
+            10
+            -30
+            12,4
+-->
