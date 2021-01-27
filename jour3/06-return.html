@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 06-return.html
+
+        // dans le fichier 02-function.html 
+
+        // il existe 2 manières de créer des fonctions en javascript
+        // 1ère manière
+        function a(){ }
+
+        // 2ème manière 
+        let b = function (){}
+        // créer une variable et on y stocke une fonction sans nom (fonction anonyme)
+
+        // en 2015 3ème manière de créer des fonctions en javascript
+        // (je ne vais que vous la présenter mais l'utiliser )
+        
+        let c = () => { }
+
+        // arrow function // fat arrow function
+        // pratique écrit moins MAIS si on n'est pas habituer à écrire des fonctions en javascript
+        // ça peut embrouiller fortement 
+
+        let d = () => {}
+
+
+        // dans les fonctions a et b vous pouvez ajouter un mot clé de javascript 
+        // return 
+        // ce mot clé DOIT ETRE écrit DANS les accolades de la fonction 
+
+        function e( budget ){
+            if( budget < 5 ){
+                return "je ne peux rien acheter";
+            }else {
+                let marque = "Nutella";
+                let taille = 250;
+                let poids = "g";
+                return  `j'ai acheté un pot de ${marque} de ${taille}${poids}`;
+            }
+        }
+
+        let achat = e( 4 );
+        // le mot clé return permet au moment de l'appel de la fonction de pouvoir récupérer la valeur devant le mot clé return (stocké dans la variable achat )
+
+        console.log(achat);
+        
+    </script>
+</body>
+</html>
