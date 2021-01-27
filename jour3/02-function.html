@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 02-function.html
+
+        // 6 types de variables 
+        // dans une variable, on peut stocker une ou plusieurs valeurs 
+
+        // dans une fonction, on va pouvoir stocker dans une variable des instructions 
+
+        // créer une variable 
+
+        let a = "coucou";
+
+        // créer la fonction et le nom de la fonction est b 
+        // 1ère manière 
+        function b () { 
+            let distance = 30 ;
+            let unite = "km";
+            console.log( `la distance entre Doranco et ma maison est de ${distance} ${unite}` ) ;
+        }
+
+        // dans la variable b on vient de stocker 3 instructions 
+        // 2ème manière de créer une fonction 
+        let c = function (){
+            let distance = 30 ;
+            let unite = "km";
+            console.log( `la distance entre Doranco et ma maison est de ${distance} ${unite}` ) ;
+        }
+        //si je veux exécuter les instructions (statement) dans les variables b et c 
+        b(); // pour la variable b exécute les instructions qui sont stockées dedans 
+        c(); // exécute les instructions stockées dans la variable c ;
+
+        // function est dans le fond = 7ème type de variable 
+
+        function titre(){
+            console.log("je suis le titre de la page ");
+        }
+
+        function pageWeb (){
+            titre();
+            console.log('je suis une page web');
+        }
+
+        pageWeb();
+        
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer un  nouveau fichier 03-exo.html
+
+    de fichier contient une fonction
+        déclarer la fonction = créer la fonction 
+        le nom de la fonction surface 
+        contient des instructions 
+            créer une variable largeur : 30
+            créer une autre variable hauteur : 10
+            afficher dans la console le texte suivant 
+                un rectangle de largeur 30 et de hauteur 10 a une surface largeur * hauteur
+
+        exécuter la fonction surface : exécuter les instructions stockées DANS la fonction surface
+-->
