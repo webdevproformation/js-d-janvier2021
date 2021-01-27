@@ -21,6 +21,24 @@
         genererArticle("Premier article", 30 );
         genererArticle("Deuxième article" , 0);
         genererArticle("Troisième article", 2);
+
+
+        function genererArticle2(titre , like){
+            if(like > 0){
+                return `<h1>${titre}</h1>
+                <span>${like}</span>`;
+            } else {
+                return `<h1>${titre}</h1>` ;
+            }
+        }
+
+        let article1 = genererArticle2("Premier article", 30 );
+        let article2 = genererArticle2("Deuxième article" , 0);
+        let article3 = genererArticle2("Troisième article", 2);
+
+        console.log(article1);
+        console.log(article2);
+        console.log(article3);
     </script>
 </body>
 </html>
