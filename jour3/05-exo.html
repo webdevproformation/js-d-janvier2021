@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function surfaceCercle( rayon ){
+            if(rayon < 0){
+                console.log("rayon non conforme");
+            }
+            else {
+                let surface = 3.14 * rayon ** 2;
+                console.log( `un cercle de rayon ${rayon} a une surface ${ surface }` );
+            }
+        }
+
+        // appeler la fonction => exécuter les instructions de ma fonction 
+
+        surfaceCercle( 10 ); // un cercle de rayon 10 a une surface 314
+        surfaceCercle( -30 ); //  rayon non conforme
+        surfaceCercle( 12.4 ); // un cercle de rayon 12.4 a une surface 482.80640000000005
+
+    </script>
+</body>
+</html>
