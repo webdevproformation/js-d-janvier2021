@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let rectangle = {
+            largeur : 30,
+            hauteur : 40,
+            surface(param){ 
+                console.log(`un rectangle de largeur ${this.largeur} et de hauteur ${this.hauteur} a une surface de ${this.hauteur * this.largeur}`);
+            },
+            perimetre : function(){
+                console.log(`un rectangle de largeur ${this.largeur} et de hauteur ${this.hauteur} a une perimetre de ${(this.hauteur + this.largeur) * 2}`);
+            },
+            resultats(){
+                rectangle.perimetre();
+                this.surface(10);
+            }
+        }
+
+        rectangle.perimetre();
+        rectangle.surface();
+        rectangle.resultats();
+    </script>
+</body>
+</html>
