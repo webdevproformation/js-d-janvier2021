@@ -21,6 +21,41 @@
         cercle.perimetre(2);
         cercle.surface(15);
         cercle.surface(3.16);
+
+        let resultat = "bonjour"; // variable globale : scope
+
+        function a(){
+            let resultat = "calcul"; // variable locale : portée de la variable (scope)
+            console.log(resultat);
+        }
+        function b(){
+            let resultat = "information"; // variable locale => prioritaire 
+            console.log(resultat);
+        }
+        function c (){
+            console.log(resultat); // étant donné que je n'ai pas de variable locale dans les accolades resultat , javascript va regarder ??? j'ai une variable resultat scope global
+        }
+        function d ( resultat){ // paramètre c'est comme un variable local => prioritaire
+            console.log(resultat);
+        }
+        a();
+        b();
+        c();
+        d( "je suis la fonction d" );
+
+        let rayon = 20;
+
+        let obj = {
+            b(){
+                let rayon = 50 ;
+            },
+            a(){
+                console.log(rayon);
+            }
+        }
+        obj.b();
+        obj.a();
+
     </script>
 </body>
 </html>
