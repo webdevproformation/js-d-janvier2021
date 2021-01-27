@@ -1,0 +1,107 @@
+url : https://formation.webdevpro.net/js-initiation/
+=> directement dans la barre d'adresse de votre navigateur (pas dans Google)
+login : js
+password : js
+
+------------------- 
+
+note que je prends :
+
+https://github.com/webdevproformation/js-d-janvier2021
+
+------------------- 
+
+des questions sur ce que l'on a vu hier ???
+
+rappels de ce que l'on a vu hier 
+
+6 types de variables :
+
+let a = 1;
+let b = "bonjour";
+let c ; // undefined
+let d = ["a","b"];
+let e = { age : 21 , forme : "rectangle" };
+let f = 13 > 1;
+
+// chaque type de variable dispose de méthode pour réaliser des opérations 
+
+chiffres : + - () / (division) * (multiplication)  ** (puissance)
+string : concaténation 
+créer des variables pour ensuite lui attribuer une valeur 
+tableau : stocker plusieurs infos simultanément et des methodes (actions)
+objet : stocker plusieurs infos simultanément
+boolean : && ET   || OU   ! NOT
+            != différent
+let g = !( 12 > 2 ); 
+//    =   ! ( true );
+//    =   !true //inverse
+//    = false 
+
+let h = !( f );
+//    =   ! ( true );
+//    =   !true //inverse
+//    = false 
+
+let i = !( 12 != 2 );  // ≠  !=
+//    =   ! ( true );
+//    =   !true //inverse
+//    = false 
+
+// filtrer si la personne peut réaliser 
+// si l'internaute ne peut pas créer un article 
+
+// mot clés importants 
+
+let j = 12 != 12 ;
+
+if( j ){  }
+
+// si j est true javascript va exécuter les instructions entre les accolades
+// si j est false javascript ne va pas exécuter les instructions entre les accolades (il va passer à la suite )
+
+if( condition1 ){
+
+}
+else if( condition2 ){
+
+}
+else if( condition3 ){
+
+}
+else {
+
+}
+// ici
+dès qu'une condition est évaluée à true => exécuter les instructions entre les accolades et on sort de la structure if elseif
+
+si toutes les conditions sont false => exécuter les instructions dans les accolades du else 
+
+il n'y a 1 seul if et 1 seul else 
+par contre on peut avoir entre 0 et n else if(){ }
+
+// boucle (loop)
+
+// méthode classique : boucle for 
+// 3 instructions dans la parenthèse de la boucle for 
+// a/ créer une variable 
+// b/ boolean => condition de sortie de la boucle dès que la condition est false alors arrête répéter les instructions dans les accolades 
+// c/ augmentation / incrément de la variable créée à l'étape a 
+for(let i = 0 ; i <= 2 ; i = i + 1  ){
+    // instruction que tu veux réaliser plusieurs fois  
+}
+
+let r = 12 > 4;
+
+// boucle while 
+
+let i = 0 ;
+while( i <= 2 ){
+    i = i + 1
+    // instruction
+}
+
+// tableau 
+
+for in objet  //  for of tableau
+
