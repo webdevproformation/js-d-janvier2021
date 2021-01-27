@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let users = [
+            {
+                age : 24 ,
+                nom : "Alain" ,
+                role : "administrateur" ,
+                status : "actif" ,
+                isAdmin(){
+                    if(this.role == "administrateur" && this.status == "actif"){
+                        return true;
+                    }else{
+                        return false ;
+                    }
+                }
+            },
+            {
+                age :25 ,
+                nom : "Benjamin" ,
+                role : "rédacteur" ,
+                status : "inactif" ,
+                isAdmin(){
+                    if(this.role == "administrateur" && this.status == "actif"){
+                        return true;
+                    }else{
+                        return false ;
+                    }
+                }
+            }
+        ];
+        if(users[0].isAdmin() == true){
+            // je m'appelle Alain et j'ai 24 ans
+            console.log(`je m'appelle ${users[0].nom} et j'ai ${users[0].age} ans`);
+        }
+        if(users[1].isAdmin() == true){
+            // je m'appelle Benjamin et j'ai un rôle de rédacteur
+            console.log(`je m'appelle ${users[1].nom} et j'ai un rôle de ${users[1].role}`);
+        }
+    </script>
+</body>
+</html>
