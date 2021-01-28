@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- p.item$*5 -->
+    <p class="item1"></p>
+    <p class="item2"></p>
+    <p class="item3"></p>
+    <p class="item4"></p>
+    <p class="item5"></p>
+    <script>
+        // pour la balise ayant la class item1
+        // ajouter un peu de texte 
+        // modifier sa mis en forme : changer sa couleur de texte + le souligner
+        document.querySelector(".item1").innerHTML = "un peu de texte";
+        document.querySelector(".item1").style["color"] = "#00ff00";
+        document.querySelector(".item1").style["text-decoration"] = "underline";
+
+        let item2 = document.querySelector(".item2");
+        item2.innerHTML = "encore du texte";
+        item2.style["text-shadow"] = "2px 2px 2px grey";
+        item2.style["margin-left"] = "10px";
+
+        let item3 = document.querySelector(".item3");
+        item3.innerHTML = "3ème p";
+        item3.style["text-align"] = "center";
+        item3.style["font-size"] = "30px" ;
+        item3.style["font-weight"] = "bold";
+
+        // dans le même fichier 
+        // pour la balise qui a la class item4 réaliser les modifications suivantes
+            // ajouter le texte "p4"
+            // réaliser les mises en forme suivante : rotation de 80deg du texte sur l'axe Z
+
+        // pour labalise qui a la class item5 réaliser les modifications suivantes
+            // ajouter texte dernier paragraphe
+            // réaliser les mises en forme suivante : 
+             // fond de couleur rose
+             // couleur de texte grise
+             // taille de police de 15px
+             // coins arrondi de 5 px
+    </script>
+
+</body>
+</html>
