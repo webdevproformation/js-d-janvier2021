@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- div.main -->
+    <div class="main"></div>
+    <script>
+        let article = {
+            titre : "Article 1",
+            body : "lorem ipsum",
+            auteur : {
+                nom : "Alain Dufour",
+                role : "admin"
+            }
+        };
+        let contenu = `<article>`;
+            contenu += `<h2>${article.titre}</h2>`;
+            contenu += `<p>${article.body}</p>`;
+            contenu += `<ul>`;
+            contenu += `<li>auteur : ${article.auteur.nom}</li>`;
+            contenu += `<li>rôle : ${article.auteur.role}</li>`;
+            contenu += `</ul>`;
+            contenu += `</article>`;
+        let contenu2 = "<article>";
+            contenu2 += "<h2>"+article.titre+"</h2>";
+            contenu2 += "<p>"+article.body+"</p>";
+            contenu2 += "<ul>";
+            contenu2 += "<li>auteur : "+article.auteur.nom+"</li>";
+            contenu2 += "<li>rôle : "+article.auteur.role+"</li>";
+            contenu2 += "</ul>";
+            contenu2 += "</article>";
+
+        document.querySelector(".main").innerHTML = contenu2 ;
+    </script>
+</body>
+</html>
