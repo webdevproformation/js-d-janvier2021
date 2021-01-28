@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <h1></h1>
+    <script>
+        // on met toujours la script à la fin de la page html
+        // à côté de la balise fermante 
+        // ???? 
+        // si je met cette balise à la fin, javascript va attendre que toutes les balises html soient chargées dans la mémoire 
+        // pour agir
+        document.querySelector("p").innerHTML = "attendre tout le html";
+        // si fais l'inverse => je la balise p après la balise script 
+        // le js est exécuté AVANT la balise p 
+        // javascript ne voit pas la balise p 
+        // erreur dans la console : document.querySelector(...) is null
+        // pour éviter les problèmes de chargement de page => mettre la balise script à la fin de la page !!!!
+        // écrire le html d'abord
+        // puis la balise script !!!  pour manipuler le html !! 
+    </script>
+</body>
+</html>

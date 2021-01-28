@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Emmet permet d'écrire rapidement du html ! -->
+    <!-- h1#titre -->
+    <h1 id="titre"></h1>
+    <!-- p.start -->
+    <p class="start"></p>
+    <!-- p.end -->
+    <p class="end"></p>
+    <!-- h2.partie1 -->
+    <h2 class="partie1"></h2>
+    <!-- p#partie1 -->
+    <p id="partie1"></p>
+    <!-- h2.conclusion -->
+    <h2 class="conclusion"></h2>
+    <!-- p#conclusion -->
+    <p id="conclusion"></p>
+    <p id="conclusion2"></p>
+    <script>
+        document.querySelector("#titre").innerHTML = "Sommaire";
+        document.querySelector(".end").innerHTML = "fin sommaire";
+        document.querySelector(".start").innerHTML = "partie1 <br> Conclusion";
+        document.querySelector(".partie1").innerHTML = "Présentation";
+        document.querySelector("#partie1").innerHTML = "sujet 1 <br> sujet2 <br> sujet3";
+        document.querySelector(".conclusion").innerHTML = "Conclusion";
+        // 1ère solution possible => il faut échapper les " dans la chaine de caractères
+        document.querySelector("#conclusion").innerHTML = "<a href=\"https://google.fr\">lire la suite</a>";
+        // 2ème solution possible : template string => pas besoin de faire de l'échappement des " dans la chaine de caractères 
+        document.querySelector("#conclusion2").innerHTML = `<a href="https://google.fr">lire la suite</a>`;
+
+        // attention indentation 
+        // attention camelCase dans les noms des propriétés / méthodes
+        // attention aux symboles "#..." "...."
+        // ne pas oublier le symbole = et les . 
+        // coloration syntaxique 
+        // allez dans la console du navigateur => lire le message d'erreur 
+    </script>
+</body>
+</html>
+
+<!-- 
+    09-dom-boucle.html
+-->
