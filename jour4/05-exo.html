@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <h2></h2>
+    <p></p>
+    <h3></h3>
+    <ul>
+        <li></li>
+    </ul>
+    <script>
+        document.querySelector("p").innerHTML = "Je sais écrire dans le DOM via Javascript";
+        // je veux remplir la balise h1
+        document.querySelector("h1").innerHTML = "titre principal";
+        // remplir la balise h2 
+        document.querySelector("h2").innerHTML = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+
+        // créer une variable qui contient un string 
+        let texte = "je suis une balise h3";
+        document.querySelector("h3").innerHTML = texte ;
+
+        let courses = { budget : 20 , produit : "pommes" } ;
+
+        document.querySelector("li").innerHTML = `${courses.budget} ${courses.produit}`;
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer un nouveau fichier html 06-exo.html 
+
+    dans ce fichier 
+    des 4 balises 
+        h1 
+        h2
+        p 
+        strong 
+    balise script => javascript 
+        créer une variable 
+            semaines de type tableau (array) , contient les valeurs suivantes 
+                "Lundi"
+                Mardi
+                mercredi
+        
+        remplir la balise h1 avec le 1er élément de la variable semaines
+        remplir la balise h2 avec le dernier élément de la variable semaines
+        remplir la balise p avec la concaténation de 1er élément et 2ème élément de la variable semaines 
+        remplir la balise strong avec le 2ème élément de la variable semaines 
+
+
+
+-->
