@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- p*4 -->
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <script>
+        // va permettre de sélectionner la première balise p disponible dans la page web 
+        // document.querySelector("p").innerHTML = "balise p";
+
+        // avec cette méthode vous sélectionner tous les balises p de la page 
+        let paragraphes = document.querySelectorAll("p");
+        console.log(paragraphes); // collection  [ {} , {} , {} , {} ]
+        paragraphes[0].innerHTML = "le 1er p";
+        paragraphes[1].innerHTML = "2ème p";
+        paragraphes[2].style["height"] = "10px";
+        paragraphes[2].style["background"] = "red";
+        paragraphes[3].innerHTML = "dernier p";
+        // tableau qui contient des balises html [ p , p , p , p ]
+        // chaque p dans le tableau est objet 
+        // [ {} , {} , {} , {} ]
+        // Collection 
+        /*
+            let t = [ 
+                {
+                    nom : "Alain",
+                    id : 1
+                 },
+                 {
+                     nom : "Pierre",
+                     id : 2
+                 }
+            ]
+
+            t[0].nom // "Alain"
+            t[1].id // 2
+        */
+        
+
+    </script>
+</body>
+</html>
