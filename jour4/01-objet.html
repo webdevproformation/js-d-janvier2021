@@ -9,7 +9,58 @@
     <script>
         // 01-objet.html
 
-        
+        // à partir de maintenant nous allons écrire dans le navigateur (et plus uniquement dans la console du navigateur )
+
+        // => DOM 
+
+        // pour pouvoir utiliser le DOM, il faut au préalable comprendre la notion d'objet => bien utiliser le DOM IL FAUT comprendre comment fonctionnent les objets 
+
+
+        // rappel objet litteral
+
+        let menu = { 
+            position : "top", // string 
+            contenu : [ "Accueil", "Présentation", "Contact" ] , // array = tableau
+            css : { color : "red" , fontSize : "15px" , margin : "5px" }, // objet
+            status : false , // boolean
+            // les propriétés de l'objet menu 
+            generer(){ // function
+                console.log( this.contenu[0] ) ;
+            },
+            show : function(){  // function
+                console.log( this.css.fontSize );
+            } 
+            // méthodes de l'objet menu
+        };
+
+        // DOM => il faut avoir compris commment fonction les objets ! 
+
     </script>
 </body>
 </html>
+<!-- 
+    créer dans le dossier jour4 un nouveau fichier 02-exo.html
+    ce fichier contient un objet 
+    nom de la variable :
+        article 
+    cet objet contient plusieurs membres 
+        propriété ( clé = valeur )
+            contenu = valeur est un tableau à 3 valeurs
+                    Titre 1
+                    lorem ipsum 
+                    01/01/2021 
+            auteur = valeur objet qui contient 2 propriétés
+                prenom : Alain
+                nom : Dufour
+            like = valeur chiffre 55
+            categories = valeur tableau à 2 valeurs
+                    Javascript
+                    jQuery
+        méthode ( clé = function )
+            get , cette méthode contient les instructions suivantes
+                afficher dans la console le texte suivant
+                    récupérér le prénom et le nom de l'auteur de l'article 
+            get2  , cette méthode contient les instructions suivantes
+                afficher dans la console le texte suivant
+                    récupérér toutes les catégories de l'article             
+-->
