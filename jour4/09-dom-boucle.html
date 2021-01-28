@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="introduction"></div>
+    <div class="partie1"></div>
+
+    <script>
+        // 09-dom-boucle.html
+
+        let contenu = "<h1>Article 1</h1>" ;
+            contenu +=  "<img src=\"https://via.placeholder.com/200x100\" alt=\"\">";
+            contenu +=  "<p>mon premier article réalisé via javascript !!</p>";
+            contenu +=  "<p>lire la suite</p>";
+
+        // concaténation sur 1 seule variable !!! = contenu 
+        // maintenant que la variable est remplie
+        // injecter dans le DOM
+
+        document.querySelector(".introduction").innerHTML = contenu ;
+
+        // dans le fichier en cours, créer une variable contenu2
+        // dans cette variable vous allez écrire le texte suivant 
+        /*
+            <hr>
+            <h2>Article 2</h2>
+            <img src="https://via.placeholder.com/400x200" alt="">
+            <p>lorem ipsum et plein de texte factice</p>
+            <ul>
+                <li>javascript</li>
+                <li>jquery</li>
+            </ul>  
+            
+            une fois la variable créer et remplie avec le texte précédent
+            injecter le contenu de la variable contenu2 dans la balise qui a la class partie1
+        */
+
+
+
+    </script>
+</body>
+</html>
