@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 03-window.html
+
+        // javascript c'est langage client => langage qui est exécuté par le navigateur 
+        // créer variable / objet / fonction ... // contacténation 
+
+        // javascript est lancé automatique dès que vous ouvrez une page web 
+        // même si votre page web est vide 
+        // lance javascript 
+        // javascript va créer une variable AUTOMATIQUEMENT qui s'appelle window 
+        // window en minuscule  (à ne pas confondre avec l'OS Windows)
+        // cette variable contient TOUT ce que vous voyez à l'écran 
+
+        // window 
+
+        // Vous avez TOUT :
+        // l'information écrite dans la barre d'adresse :
+        // http://127.0.0.1:5500/jour4/03-window.html
+        // cookie 
+        // texte écrit dans la page web
+        // console 
+
+        // TOUT 
+
+        // window => objet 
+
+        /*
+            javascript va créer un objet 
+
+            let window = { 
+                location : "http://127.0.0.1:5500/jour4/03-window.html",
+                document : { 
+                    // .... tous les éléments écrit dans la page web
+                }
+                console : { 
+                    log : function(){}
+                }
+                cookie : { 
+                }
+                // .... plein d'autres propriétés 
+            }
+        
+        */
+
+        console.log( window ); // permet d'afficher TOUTES les membres 
+        // stockées dans l'objet window
+
+        // http://127.0.0.1:5500/jour4/03-window.html
+
+        console.log( window.location );
+
+        console.log( window.location.href ) ;
+
+        /*
+            let window = {
+                location : {
+                    href : "http://127.0.0.1:5500/jour4/03-window.html"
+                }
+            }
+            
+            javascript va permet de modifier une page web 
+            pour pouvoir modifier une page web nous allons utiliser l'objet window  pour réaliser des modifications
+        */
+
+        console.log( window.location.href ) ;
+        // permet de récupérer l'url de la page en cours d'affichage 
+
+        // dans toutes les propriétés disponibles
+        // celle qui va nous intéresser le plus => celle qui permet 
+        // d'interagir avec la page web 
+
+        console.log( window.document );
+
+        // l'objet window => objet global et implicite 
+        // tous ce que vous allez écrire en javascript est AUTOMATIQUE ajouté à la variable window
+
+        function bonjour(){
+            console.log("j'utilise la fonction bonjour");
+        }
+
+        // exécuter la fonction 
+
+        bonjour();
+
+        // dès que vous créez une fonction elle automatiquement ajoutée à l'objet window
+        window.bonjour();
+
+        // pour éviter d'avoir à écrire window tout le temps 
+
+        bonjour();
+
+        console.log(window.document);
+        console.log(document); // nous allons éviter d'écrire window 
+
+        // synthèse 
+        // javascript créer automatique un objet window
+        // cet objet objet global et implicite
+        // la moindre ligne que vous écrivez en javascript est associée à l'objet window
+
+        // nous allons surtout utiliser la propriété document de window qui va nous permettre de modifier la page web 
+
+        console.log(window.location.href);
+        console.log(location.href);
+        
+        /*
+            let toto = {
+                bonjour : "hello"
+            }
+
+            console.log(toto.bonjour); // "hello"
+            console.log(bonjour); // "hello"
+        */
+
+        // la variable window est partout Mais on ne l'écrira quasiment 
+    </script>
+</body>
+</html>
+
+<!-- créer le fichier 04-document.html -->
