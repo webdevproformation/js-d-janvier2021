@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="titre"></h2>
+    <p id="intro"></p>
+    <p class="info"></p>
+    <h2 class="conclusion"></h2>
+    <script>
+        // la méthode querySelector("p") , querySelector("h2")
+        // il est possible d'utiliser avec des class  la méthode querySelector(".titre")
+        document.querySelector(".titre").innerHTML = "titre principal de la page";
+        // dans querySelector(" ") // utiliser les sélecteurs css 
+        /*
+            .titre{
+                color : red
+            }
+            #intro{ 
+            }
+        */
+        document.querySelector("#intro").innerHTML = "je suis le paragraphe d'introduction";
+        document.querySelector(".conclusion").innerHTML = "Conclusion !!";
+        document.querySelector(".info").innerHTML = "la suite de l'introduction ...";
+    </script>
+</body>
+</html>
