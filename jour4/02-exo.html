@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // article c'est l'objet  possède des membres 
+        let article = { 
+            // contenu c'est la propriété 
+            // : 
+            // valeur de la propriété 
+            // la valeur peut être string / number / boolean / array / object
+            contenu :  [ "Titre 1" , "lorem ipsum" , "01/01/2021" ] ,
+            auteur  : { 
+                prenom : "Alain" ,
+                nom : "Dufour"
+            } ,
+            like : 55 ,
+            categories : [ "Javascript" , "jQuery"  ] ,
+            get : function(){ 
+                console.log( `${this.auteur.prenom} ${this.auteur.nom}`  ); // template string
+                console.log( this.auteur.prenom + " " +  this.auteur.nom   ); // équivalent à la ligne précédente
+            },
+            get2(){
+                console.log( this.categories[0] ); // Javascript
+                console.log( this.categories[1] ); // jQuery
+                // boucle 
+                for(let i = 0 ; i < 2 ; i = i + 1){
+                    console.log( this.categories[i] );
+                }
+            }
+        };
+
+    </script>
+</body>
+</html>
