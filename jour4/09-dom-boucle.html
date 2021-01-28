@@ -39,8 +39,41 @@
             injecter le contenu de la variable contenu2 dans la balise qui a la class partie1
         */
 
+        let contenu2 = "<hr>";
+            contenu2 += "<h2>Article 2</h2>";
+            contenu2 += "<img src=\"https://via.placeholder.com/400x200\" alt=\"\">" ;
+            contenu2 += "<p>lorem ipsum et plein de texte factice</p>" ;
+            contenu2 += "<ul>";
+            contenu2 += "<li>javascript</li>";
+            contenu2 += "<li>jquery</li>" ;
+            contenu2 += "</ul>" ;
 
+        // injecter la variable dans le html 
+
+        document.querySelector(".partie1").innerHTML = contenu2 ;
 
     </script>
 </body>
 </html>
+<!-- 
+    créer le fichier 10-exo.html
+    a/ balise div qui a class main
+    dans ce fichier variable 
+    1/ article c'est un objet contient les 3 propriétés suivantes 
+    titre = "Article 1"
+    body = lorem ipsum
+    auteur qui est un objet qui possède 2 propriétés
+        nom Alain Dufour
+        role admin
+    2/ créer une autre variable contenu est qui contient le texte suivant
+    <article>
+        <h2>Article 1</h2>
+        <p>lorem ipsum</p>
+        <ul>
+            <li>auteur : Alain Dufour</li>
+            <li>rôle : admin</li>
+        </ul>
+    </article>
+    3/ injecter le contenu de la variable contenu dans une balise div qui a la class main
+    => 15h25 !! 
+-->
