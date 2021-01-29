@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="" alt="" id="carousel">
+    <img src="" alt="diapositive" id="carousel">
     <script>
         let diapositives = [
             "img/diapo1.png",
@@ -20,6 +20,7 @@
 
         let index = 0 ;
         document.querySelector("#carousel").setAttribute("src", diapositives[0]);
+        document.querySelector("#carousel").getAttribute("alt");
 
         setInterval(function(){
             console.log(index);
@@ -30,9 +31,8 @@
             }
 
             document.querySelector("#carousel").setAttribute("src", diapositives[index]);
-        },1500 );
-
-
+        }, 1500 );
+        // pause café => 15h38 !! // bon café à toute suite !!!!
         // rappel 
         // mercredi => portée des variables 
 
