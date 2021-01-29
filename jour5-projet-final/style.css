@@ -32,17 +32,19 @@ header ul li{
 }
 section{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
 section > *{
-    width:48%;
+    width:100%;
 }
-@media (max-width:650px){
+@media (min-width:650px){
     section{
-        flex-wrap: wrap;
+        flex-wrap: nowrap; /* forcer le non retour à la ligne  */
+        justify-content: space-between;
     }
     section > *{
-        width:100%;
+        width:48%;
     }
 }
 form label{
