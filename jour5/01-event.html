@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* la class css qui va mettre en forme 
+            les 3 langages collaborent 
+        */
+        .blabla{
+            background: #ffc478 !important;
+        }
+        body{
+            display: flex;
+            align-items: flex-start;
+        }
+        button{
+            transition: 1s margin , 1s font-size;
+        }
+        button.move{
+            margin : 30px 0 0 0;
+            font-size: 130%;
+        }
+
+    </style>
+</head>
+<body>
+    <button>Action 1</button>
+    <button>Action 2</button>
+    <button>Action 3</button><!-- bouton sur lequel l'internaute va agir-->
+    <button>Action 4</button>
+    <script>
+        // événementiel 
+        // javascript permet d'exécuter code SUITE à une action réalisée par l'internaute 
+        // si l'internaute clique sur le bouton Action 1 ALORS la balise body changer la couleur de fond => #d3e0ea
+
+        // 1 sélectionner le bouton concerné
+        let buttons = document.querySelectorAll("button")
+        buttons[0]
+
+        // addEventListener()
+        // méthode qui permet d'ajouter un comportement lorsque l'on fait une action
+        // addEventListener() prend deux paramètres 
+        // action : "click"
+        // callback : function(){} c'est une fonction qui contient les instructions à réaliser lorsque l'on a cliqué 
+        // dans les accolades du callback => écrire les instructions à effectuer
+        document.querySelectorAll("button")[0].addEventListener( "click", function(){ 
+            document.querySelector("body").style["background"] = "#d3e0ea" ;
+        } );
+
+        // si je clique que le deuxième bouton alors je vais remettre la couleur de fond de la balise body en blanc
+
+        document.querySelectorAll("button")[1].addEventListener( "click", function(){ 
+            document.querySelector("body").style["background"] = "#ffffff" ;
+        } );
+
+        // pour le 3ème bouton si je clique 1 première fois => passe la couleur de fond de body en #ffc478 et si je reclique sur le bouton alors remettre la couleur de fond de body à blanc 
+        
+        // 2 javascript ajouter à la balise body la class orange
+        document.querySelectorAll("button")[2].addEventListener("click", function(){
+            document.querySelector("body").classList.toggle("blabla");
+        });
+
+        document.querySelectorAll("button")[3].addEventListener("click", function(){
+            // déplacer le 3ème bouton vers le bas 
+            document.querySelectorAll("button")[2].classList.toggle("move");
+        })
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer un nouveau fichier 02-exo.html
+-->
