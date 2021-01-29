@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="" class="diaporama">
+    <script>
+        // fonction qui est donnée par le navigateur
+        // fonction prend 2 paramètres 
+        // callback
+        // number durée exprimée en millisecondes 
+        // 2000 = 2000ms = 2 secondes
+        // 5000 = 5 secondes
+        // exécuter le callback toutes les 2 secondes (à l'infini)
+        setInterval( function(){} , 2000 );
+
+        let i = 0 ;
+        setInterval(function(){ 
+            console.log(i);
+            i = i + 1;
+        } , 1000 );
+
+
+        function a(param){
+
+        }
+
+        a(12);
+    </script>
+</body>
+</html>
+
+<!-- 
+    créer une nouvelle page web 06-exo.html
+
+    contenir une balise script
+
+    dans cette balise fonction setInterval ( )
+    paramètre => callback 
+    exécutée toutes les 2 secondes 
+
+
+    => afficher dans la console la suite de chiffre suivant 
+    0
+    5
+    10
+    15
+    20
+    25 
+    ....
+    infini
+
+
+
+-->

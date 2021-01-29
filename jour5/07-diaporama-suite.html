@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="" class="diaporama">
+    <script>
+
+        let diapositives = [
+            "https://via.placeholder.com/200x100?text=image1",
+            "https://via.placeholder.com/200x100?text=image2",
+            "https://via.placeholder.com/200x100?text=image3",
+            "https://via.placeholder.com/200x100?text=image4",
+        ];
+
+        // remplir l'attribut src de l'image avec la 1ère valeur stockée dans le tableau diapositives 
+        document.querySelector(".diaporama").setAttribute( "src", diapositives[0]  );
+        let index = 0 ;
+
+        setInterval( function(){
+            if(index >= diapositives.length -1){
+                index = 0 ;
+            }else{
+                index = index + 1;
+            }
+            document.querySelector(".diaporama").setAttribute( "src", diapositives[index]  );
+        }, 2000)
+
+
+    </script>
+</body>
+</html>
