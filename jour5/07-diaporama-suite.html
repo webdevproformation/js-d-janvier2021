@@ -10,10 +10,10 @@
     <script>
 
         let diapositives = [
-            "https://via.placeholder.com/200x100?text=image1",
-            "https://via.placeholder.com/200x100?text=image2",
+            "https://via.placeholder.com/200x100?text=image1", // 0
+            "https://via.placeholder.com/200x100?text=image2", // 1
             "https://via.placeholder.com/200x100?text=image3",
-            "https://via.placeholder.com/200x100?text=image4",
+            "https://via.placeholder.com/200x100?text=image4", // 3
         ];
 
         // remplir l'attribut src de l'image avec la 1ère valeur stockée dans le tableau diapositives 
@@ -27,7 +27,7 @@
                 index = index + 1;
             }
             document.querySelector(".diaporama").setAttribute( "src", diapositives[index]  );
-        }, 2000)
+        }, 2000);
 
 
     </script>
