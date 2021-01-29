@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        div qui a la class onglet 
+            header
+                3 bouton > 1 mot
+            div
+                3 paragraphes
+    -->
+
+    <div class="onglet">
+        <header>
+            <button data-index="0">Onglet 1</button>
+            <button data-index="1">Onglet 2</button>
+            <button data-index="2">Onglet 3</button>
+        </header>
+        <div>
+            <!-- p*3>lorem10 -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, non.</p>
+            <p>Impedit cupiditate doloribus laborum sunt porro ut autem iste fugit?</p>
+            <p>Qui dolorum laborum perspiciatis sint veniam natus quos ea sunt!</p>
+        </div>
+    </div>
+    <script>
+        /*document.querySelectorAll(".onglet p")[0].style["display"]= "none";
+        document.querySelectorAll(".onglet p")[1].style["display"]= "none";
+        document.querySelectorAll(".onglet p")[2].style["display"]= "none";*/
+
+        for(let i = 0 ; i < 3 ; i = i + 1){
+            document.querySelectorAll(".onglet p")[i].style["display"]= "none";
+        }
+        document.querySelectorAll(".onglet p")[0].style["display"]= "block";
+        // afficher le 1er paragraphe dans la balise qui a la class .onglet 
+
+        // les actions sur les boutons 
+        /*document.querySelectorAll(".onglet button")[0].addEventListener("click", function(){
+            document.querySelectorAll(".onglet p")[0].style["display"]= "block";
+            document.querySelectorAll(".onglet p")[1].style["display"]= "none";
+            document.querySelectorAll(".onglet p")[2].style["display"]= "none";
+        });
+
+        document.querySelectorAll(".onglet button")[1].addEventListener("click", function(){
+            document.querySelectorAll(".onglet p")[0].style["display"]= "none";
+            document.querySelectorAll(".onglet p")[1].style["display"]= "block";
+            document.querySelectorAll(".onglet p")[2].style["display"]= "none";
+        });
+
+        document.querySelectorAll(".onglet button")[2].addEventListener("click", function(){
+            document.querySelectorAll(".onglet p")[0].style["display"]= "none";
+            document.querySelectorAll(".onglet p")[1].style["display"]= "none";
+            document.querySelectorAll(".onglet p")[2].style["display"]= "block";
+        });*/
+
+        for(let i = 0 ; i < 3 ; i = i + 1){
+            document.querySelectorAll(".onglet button")[i].addEventListener("click", function(){
+                for(let i = 0 ; i < 3 ; i = i + 1){
+                    document.querySelectorAll(".onglet p")[i].style["display"]= "none";
+                }
+               let index =  this.dataset.index ;
+               document.querySelectorAll(".onglet p")[index].style["display"]= "block";
+            })
+        }
+
+
+    </script>
+</body>
+</html>
