@@ -32,9 +32,18 @@ header ul li{
 }
 section{
     display: flex;
+    justify-content: space-between;
 }
 section > *{
-    width:50%;
+    width:48%;
+}
+@media (max-width:650px){
+    section{
+        flex-wrap: wrap;
+    }
+    section > *{
+        width:100%;
+    }
 }
 form label{
     display: block;
