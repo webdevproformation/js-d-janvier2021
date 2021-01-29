@@ -9,10 +9,10 @@
     <div class="onglet">
         <header>
             <!-- button*4>{Onglet $} -->
-            <button data-index="0">Onglet 1</button>
-            <button data-index="1">Onglet 2</button>
-            <button data-index="2">Onglet 3</button>
-            <button data-index="3">Onglet 4</button>
+            <button data-position="0">Onglet 1</button>
+            <button data-position="1">Onglet 2</button>
+            <button data-position="2">Onglet 3</button>
+            <button data-position="3">Onglet 4</button>
         </header>
         <div>
             <!-- p*4>lorem30 -->
@@ -24,6 +24,7 @@
     </div>
     <script>
         let boutons = document.querySelectorAll(".onglet button");
+        console.log(boutons);
         let paragraphes = document.querySelectorAll(".onglet p");
 
         for(let i = 0 ; i < paragraphes.length ; i = i + 1){
@@ -33,15 +34,52 @@
         paragraphes[0].style["display"] = "block";
 
         for(let i = 0 ; i < boutons.length ; i = i + 1){
+            
             boutons[i].addEventListener("click", function(){
                 for(let i = 0 ; i < paragraphes.length ; i = i + 1){
                     paragraphes[i].style["display"] = "none";
                 }
-                let index = this.dataset.index;
+                let index = this.dataset.position; // 3
+                // let text = this.innerHTML ;
+                // alert(text);
                 paragraphes[index].style["display"] = "block";
             })
         }
+        // pause déjeuner 13h38
+        // diaporama 
+        // page menu / onglet / diaporama !!
+        // bon appétit 
 
     </script>
 </body>
 </html>
+
+<!-- 
+
+    let boutons = document.querySelectorAll(".onglet button");
+    let boutons = [{ 
+        dataset: {
+            position: 0
+        }
+    }, { }]
+    let a = [ 
+        { 
+            id : 2,
+            action : function(){
+                this.id
+            }
+        },
+        {
+            innerHTML : "",
+            style : [] ,
+            classlist : {
+                toggle : ""
+            },
+            addEventListener : function( ){} ,
+            dataset : { }
+
+         } // balise html => contient plein de propriété
+        .
+    ]
+
+-->
