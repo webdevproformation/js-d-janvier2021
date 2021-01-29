@@ -1,0 +1,45 @@
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (min-width:960px){
+    .container{
+        width: 960px;
+    }
+}
+
+body{
+    font-family: sans-serif;
+    background: url("img/t.jpg");
+    color:white;
+}
+
+.container > *{
+    background-color: rgba(0,0,0, 0.7);
+    padding: 30px;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+header ul {
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+section{
+    display: flex;
+}
+section > *{
+    width:50%;
+}
+form label{
+    display: block;
+}
+form input[type="email"], textarea{
+    display: inline-block;
+    width: 100%;
+}
