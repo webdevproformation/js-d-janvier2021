@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- h2+p*3+h2+p*2 -->
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <script>
+        let titres = document.querySelectorAll("h2");
+        titres[0].innerHTML = "Introduction";
+        titres[1].innerHTML = "Conclusion";
+        titres[1].style["text-align"] = "center";
+
+        let paragraphes = document.querySelectorAll("p");
+        paragraphes[0].innerHTML = "le premier p de la page";
+        paragraphes[1].innerHTML = "lorem ipsum";
+        paragraphes[2].innerHTML = "<a href=\"https://google.fr\" alt=\"\">Google</a>";
+        paragraphes[3].innerHTML = "coucou";
+        paragraphes[4].innerHTML = "c'est la fin";
+        paragraphes[4].style["color"] = "#791330";
+
+    </script>
+</body>
+</html>
