@@ -53,12 +53,13 @@ form label{
 form input[type="email"], textarea{
     display: inline-block;
     width: 100%;
+    padding: 5px 8px;
 }
 
 /* règle css pour le javascript */
 
 img.diaporama{
-    margin-top: 10px;
+    margin: 10px 0;
     width: calc(100% - 60px);
 }
 
