@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="onglet">
+        <header>
+            <!-- button*4>{Onglet $} -->
+            <button data-index="0">Onglet 1</button>
+            <button data-index="1">Onglet 2</button>
+            <button data-index="2">Onglet 3</button>
+            <button data-index="3">Onglet 4</button>
+        </header>
+        <div>
+            <!-- p*4>lorem30 -->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo consequuntur ea quam sit officiis iure porro aut itaque. Dolore quibusdam deleniti cumque rerum recusandae! Qui voluptatibus nam reiciendis ea placeat!</p>
+            <p>Tenetur atque delectus officiis vero necessitatibus magni iusto rem dolore assumenda dicta ducimus corporis maiores, illo distinctio velit voluptatibus ipsum consequatur aut unde perspiciatis enim in optio. Impedit, iusto aut?</p>
+            <p>Quod magni quis magnam quos illo, nam maxime eius optio ducimus eveniet molestias autem! Similique sed doloribus, vel harum quidem magnam expedita sunt sequi, culpa natus ipsa! Quam, mollitia porro?</p>
+            <p>Ducimus nemo fuga aliquam aut temporibus expedita dolor soluta. Non dolorem voluptas alias ut id assumenda, suscipit reprehenderit nisi adipisci. Reprehenderit et id quo! Non animi ex recusandae aliquam nemo.</p>
+        </div>
+    </div>
+    <script>
+        let boutons = document.querySelectorAll(".onglet button");
+        let paragraphes = document.querySelectorAll(".onglet p");
+
+        for(let i = 0 ; i < paragraphes.length ; i = i + 1){
+            paragraphes[i].style["display"] = "none";
+        }
+        
+        paragraphes[0].style["display"] = "block";
+
+        for(let i = 0 ; i < boutons.length ; i = i + 1){
+            boutons[i].addEventListener("click", function(){
+                for(let i = 0 ; i < paragraphes.length ; i = i + 1){
+                    paragraphes[i].style["display"] = "none";
+                }
+                let index = this.dataset.index;
+                paragraphes[index].style["display"] = "block";
+            })
+        }
+
+    </script>
+</body>
+</html>
