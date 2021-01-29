@@ -32,7 +32,7 @@ header ul li{
 }
 section{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* forcer le retour à la ligne  */
     
 }
 section > *{
@@ -53,4 +53,19 @@ form label{
 form input[type="email"], textarea{
     display: inline-block;
     width: 100%;
+}
+
+/* règle css pour le javascript */
+
+img.diaporama{
+    margin-top: 10px;
+    width: calc(100% - 60px);
+}
+
+ul{
+    margin: 0;
+}
+
+.masquer{
+    display: none;
 }
