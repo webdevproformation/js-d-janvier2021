@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*solution 1 */
+        ul.masquer{
+            display: none; /* faire disparaitre à 100% l'élément */
+        }
+        /* solution 2*/
+        ul.masquer{
+            visibility: hidden; /* fait disparaitre MAIS la page web garde la hauteur de l'élément qui a disparu*/
+        }
+        /* solution 3 */
+        ul.masquer{
+            position: absolute;
+           top: -9999px;
+        }
+         /* solution 4 */
+        ul.masquer{
+            position: relative;
+           top: -9999px;
+        }
+         /* solution 5 */
+         ul.masquer{
+            opacity: 0;
+        }
+
+        header{
+            display: flex;
+            align-items: center;
+        }
+
+        header ul{
+            display: flex;
+        }
+        header ul li{
+            list-style: none;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <button>menu</button>
+        <!-- ul>li*4>lorem1 -->
+        <ul>
+            <li>Lorem.</li>
+            <li>Voluptatibus.</li>
+            <li>Ut?</li>
+            <li>Illum.</li>
+        </ul>
+    </header>
+    <p>Lorem, ipsum dolor.</p>
+    <script>
+        document.querySelector("button").addEventListener("click", function(){
+            document.querySelector("ul").classList.toggle("masquer")
+        });
+    </script>
+</body>
+</html>
